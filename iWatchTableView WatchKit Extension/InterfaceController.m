@@ -20,6 +20,8 @@
     [super awakeWithContext:context];
 
     // Configure interface objects here.
+    dataArray = [NSArray arrayWithObjects:@"Vinod",@"Vishwakarma",@"Raw",@"iOS",@"iWatch", nil];
+    
 }
 
 - (void)willActivate {
@@ -31,6 +33,32 @@
     // This method is called when watch view controller is no longer visible
     [super didDeactivate];
 }
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+
+    return 0;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
+    return [dataArray count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    static NSString *cellIdentifier = @"CELL";
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    
+    cell.textLabel.text = [dataArray objectAtIndex:indexPath.row];
+    
+    return cell;
+    
+}
+
 
 @end
 
