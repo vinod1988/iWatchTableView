@@ -11,7 +11,7 @@
 
 @interface InterfaceController : WKInterfaceController<UITableViewDelegate, UITableViewDataSource> {
 
-    NSArray *dataArray;
+    
 }
 @property (weak, nonatomic) IBOutlet WKInterfaceTable *tableView;
 

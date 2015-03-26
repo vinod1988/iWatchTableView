@@ -10,28 +10,61 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <button width="1" alignment="left" title="Button" id="lsD-ah-D3U"/>
-                        <table alignment="left" id="dqP-pa-A1O">
+                        <button width="1" alignment="center" title="Built.io iWatch" id="lsD-ah-D3U">
+                            <color key="backgroundColor" red="0.61961410979999998" green="0.4082927442" blue="0.041229142869999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="GVm-9D-7Ze" kind="push" id="qaw-yi-8ag"/>
+                            </connections>
+                        </button>
+                        <imageView width="136" height="80" alignment="center" image="built" id="Pti-AL-GgK"/>
+                        <label width="133" height="26" alignment="center" text="Powered by built.io" numberOfLines="2" minimumScaleFactor="0.60000000000000009" id="QlM-aG-4RL">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="189" y="291.5"/>
+        </scene>
+        <!--Raweng-->
+        <scene sceneID="hZV-Fn-aCe">
+            <objects>
+                <controller title="Raweng" id="GVm-9D-7Ze" customClass="WatchTableViewInterfaceController">
+                    <items>
+                        <table alignment="left" id="UDi-uW-BRx">
                             <items>
-                                <tableRow identifier="CELL" id="ybn-jE-gHJ">
-                                    <group key="rootItem" width="1" alignment="left" layout="vertical" id="Hkh-tv-TWG">
+                                <tableRow id="sOl-kb-qwr" customClass="CustomTableViewCell">
+                                    <group key="rootItem" width="1" alignment="left" id="7fm-5g-Vyi">
                                         <items>
-                                            <label width="81" alignment="left" text="Label" id="Obh-yj-tTb"/>
+                                            <group width="38" height="32" alignment="left" id="nVV-lR-PNs">
+                                                <items>
+                                                    <imageView width="38" height="36" alignment="left" image="built" contentMode="scaleAspectFit" id="5CU-8L-6XY"/>
+                                                </items>
+                                            </group>
+                                            <group width="93" alignment="left" layout="vertical" id="wGh-u6-OD6">
+                                                <items>
+                                                    <label width="87" alignment="left" text="Label" id="xbB-W1-w67"/>
+                                                    <dateLabel width="88" height="15" alignment="left" id="ODZ-3n-PSn">
+                                                        <dateFormatterStyle key="dateStyle" none="YES" short="YES"/>
+                                                    </dateLabel>
+                                                </items>
+                                            </group>
                                         </items>
-                                        <connections>
-                                            <segue destination="4sK-HA-Art" kind="push" id="QoA-1A-Tg3"/>
-                                        </connections>
+                                        <color key="backgroundColor" red="0.61961410979999998" green="0.61961410979999998" blue="0.61961410979999998" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
                                     </group>
+                                    <connections>
+                                        <outlet property="nameLabel" destination="xbB-W1-w67" id="60i-kS-n2R"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <color key="backgroundColor" red="0.1404150207" green="0.52475715300000003" blue="0.61961410979999998" alpha="0.73999999999999999" colorSpace="calibratedRGB"/>
                     <connections>
-                        <outlet property="tableView" destination="dqP-pa-A1O" id="4TP-Mv-gfr"/>
+                        <outlet property="interfaceTableView" destination="UDi-uW-BRx" id="psI-Yu-UTm"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="189" y="292"/>
+            <point key="canvasLocation" x="415" y="290"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -47,7 +80,7 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="152" y="638"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
@@ -57,7 +90,4 @@
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="QoA-1A-Tg3"/>
-    </inferredMetricsTieBreakers>
 </document>
