@@ -23,6 +23,8 @@
 		1768CA241AB9B20600ADE3AB /* iWatchTableView WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1768CA071AB9B20600ADE3AB /* iWatchTableView WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		17A5FF751AC2E344006F87BD /* iWatchApp.mov in Resources */ = {isa = PBXBuildFile; fileRef = 17A5FF741AC2E343006F87BD /* iWatchApp.mov */; };
 		17A5FF771AC2E636006F87BD /* iWatchApp.gif in Resources */ = {isa = PBXBuildFile; fileRef = 17A5FF761AC2E636006F87BD /* iWatchApp.gif */; };
+		17A67B2C1AC3D4D1003D293D /* WatchTableViewInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A67B2B1AC3D4D1003D293D /* WatchTableViewInterfaceController.m */; };
+		17A67B2F1AC3D5B9003D293D /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A67B2E1AC3D5B9003D293D /* CustomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,10 @@
 		1768CA201AB9B20600ADE3AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		17A5FF741AC2E343006F87BD /* iWatchApp.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = iWatchApp.mov; sourceTree = "<group>"; };
 		17A5FF761AC2E636006F87BD /* iWatchApp.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = iWatchApp.gif; sourceTree = "<group>"; };
+		17A67B2A1AC3D4D1003D293D /* WatchTableViewInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchTableViewInterfaceController.h; sourceTree = "<group>"; };
+		17A67B2B1AC3D4D1003D293D /* WatchTableViewInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchTableViewInterfaceController.m; sourceTree = "<group>"; };
+		17A67B2D1AC3D5B8003D293D /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		17A67B2E1AC3D5B9003D293D /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,8 +192,12 @@
 		1768CA081AB9B20600ADE3AB /* iWatchTableView WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				17A67B2D1AC3D5B8003D293D /* CustomTableViewCell.h */,
+				17A67B2E1AC3D5B9003D293D /* CustomTableViewCell.m */,
 				1768CA0C1AB9B20600ADE3AB /* InterfaceController.h */,
 				1768CA0D1AB9B20600ADE3AB /* InterfaceController.m */,
+				17A67B2A1AC3D4D1003D293D /* WatchTableViewInterfaceController.h */,
+				17A67B2B1AC3D4D1003D293D /* WatchTableViewInterfaceController.m */,
 				1768CA0F1AB9B20600ADE3AB /* NotificationController.h */,
 				1768CA101AB9B20600ADE3AB /* NotificationController.m */,
 				1768CA121AB9B20600ADE3AB /* Images.xcassets */,
@@ -406,6 +416,8 @@
 			files = (
 				1768CA111AB9B20600ADE3AB /* NotificationController.m in Sources */,
 				1768CA0E1AB9B20600ADE3AB /* InterfaceController.m in Sources */,
+				17A67B2F1AC3D5B9003D293D /* CustomTableViewCell.m in Sources */,
+				17A67B2C1AC3D4D1003D293D /* WatchTableViewInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
