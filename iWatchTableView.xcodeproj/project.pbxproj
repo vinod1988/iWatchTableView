@@ -25,6 +25,7 @@
 		17A5FF771AC2E636006F87BD /* iWatchApp.gif in Resources */ = {isa = PBXBuildFile; fileRef = 17A5FF761AC2E636006F87BD /* iWatchApp.gif */; };
 		17A67B2C1AC3D4D1003D293D /* WatchTableViewInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A67B2B1AC3D4D1003D293D /* WatchTableViewInterfaceController.m */; };
 		17A67B2F1AC3D5B9003D293D /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A67B2E1AC3D5B9003D293D /* CustomTableViewCell.m */; };
+		17A67B311AC3DECE003D293D /* built.io.gif in Resources */ = {isa = PBXBuildFile; fileRef = 17A67B301AC3DECE003D293D /* built.io.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		17A67B2B1AC3D4D1003D293D /* WatchTableViewInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchTableViewInterfaceController.m; sourceTree = "<group>"; };
 		17A67B2D1AC3D5B8003D293D /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		17A67B2E1AC3D5B9003D293D /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		17A67B301AC3DECE003D293D /* built.io.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = built.io.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			children = (
 				17A5FF741AC2E343006F87BD /* iWatchApp.mov */,
 				17A5FF761AC2E636006F87BD /* iWatchApp.gif */,
+				17A67B301AC3DECE003D293D /* built.io.gif */,
 				1768C9DE1AB9B1E200ADE3AB /* Info.plist */,
 				1768C9DF1AB9B1E200ADE3AB /* main.m */,
 			);
@@ -357,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17A5FF771AC2E636006F87BD /* iWatchApp.gif in Resources */,
+				17A67B311AC3DECE003D293D /* built.io.gif in Resources */,
 				1768C9E91AB9B1E200ADE3AB /* Main.storyboard in Resources */,
 				1768C9EE1AB9B1E200ADE3AB /* LaunchScreen.xib in Resources */,
 				17A5FF751AC2E344006F87BD /* iWatchApp.mov in Resources */,
